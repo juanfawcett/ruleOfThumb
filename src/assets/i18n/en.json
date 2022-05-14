@@ -1,0 +1,33 @@
+{
+  "NAV": {
+    "LOGIN": "Login",
+    "SIGN_UP": "Sign Up",
+    "TRIALS": "Past Trials",
+    "HOW_IT_WORKS": "How It Works"
+  },
+  "HEADER": {
+    "WIYOO": "What's your opinion on",
+    "MORE_INFO": "More information",
+    "WIYV": "What’s Your Veredict?",
+    "CLOSING_IN": "closing in"
+  },
+  "FOOTER": {
+    "TYC": "Terms and Conditions",
+    "PRIVACY": "Privacy Policy",
+    "CONTACT": "Contact Us",
+    "FOLLOW": "Follow us"
+  },
+  "COMMON": {
+    "DAY": "day",
+    "DAYS": "days"
+  },
+  "ASIDE_ADD_NAME": {
+    "DESCRIPTION": "Is there anyone else you would want us to add?",
+    "SUBMIT": "Submit a name"
+  },
+  "ASIDE_SPEAK_OUT": {
+    "DESCRIPTION": "Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It’s easy: You share your opinion, we analyze and put the data in a public report.",
+    "HAIRLINE": "Speak out. Be heard.",
+    "TITLE": "Be counted"
+  }
+}
