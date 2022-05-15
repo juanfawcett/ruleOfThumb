@@ -7,6 +7,6 @@ import * as moment from 'moment';
 export class RelativetimePipe implements PipeTransform {
   public transform(value: string = new Date().toISOString()): string {
     const relative = moment(value).fromNow();
-    return relative[0] === 'a' ? relative.replace("a", "1") : relative;
+    return relative[0] === 'a' ? relative.replace('a', '1') : relative;
   }
 }

@@ -11,8 +11,8 @@ export class CommonService {
   
   public vote(voteType: VoteType, ruling: Name): Observable<any> {
     return this.http.patch(`${ENV.apiPrefix}${api.names}/${ruling.id}`,
-    {"votes": {
-      "positive": voteType === VoteType.up ? ruling.votes.positive + 1 : ruling.votes.positive,
-      "negative": voteType === VoteType.down ? ruling.votes.negative + 1 : ruling.votes.negative, }});
+    {'votes': {
+      'positive': voteType === VoteType.up ? ruling.votes.positive + 1 : ruling.votes.positive,
+      'negative': voteType === VoteType.down ? ruling.votes.negative + 1 : ruling.votes.negative, }});
   }
 }

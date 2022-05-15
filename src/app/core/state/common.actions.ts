@@ -1,5 +1,5 @@
-import { createAction, props } from "@ngrx/store";
-import { Name, Theme, VoteType } from "../interfaces/common.interfaces";
+import { createAction, props } from '@ngrx/store';
+import { Name, Theme, VoteType } from '../interfaces/common.interfaces';
 
 export const setTheme = createAction(
   '[Common] Set Theme',
