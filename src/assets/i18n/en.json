@@ -19,7 +19,10 @@
   },
   "COMMON": {
     "DAY": "day",
-    "DAYS": "days"
+    "DAYS": "days",
+    "MONTH": "month",
+    "MONTHS": "months",
+    "IN": "in"
   },
   "ASIDE_ADD_NAME": {
     "DESCRIPTION": "Is there anyone else you would want us to add?",
@@ -29,5 +32,12 @@
     "DESCRIPTION": "Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It’s easy: You share your opinion, we analyze and put the data in a public report.",
     "HAIRLINE": "Speak out. Be heard.",
     "TITLE": "Be counted"
+  },
+  "HOME": {
+    "RULING": {
+      "VOTE": "Vote Now",
+      "VOTE_AGAIN": "Vote Again",
+      "THANKS": "Thank you for your vote!"
+    }
   }
 }

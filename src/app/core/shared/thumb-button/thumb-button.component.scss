@@ -1,0 +1,17 @@
+@import '../../../../sass/mixins.scss';
+@import '../../../../sass/variables.scss';
+
+.icon-button {
+    width: 100%;
+    height: 100%;
+    padding: 8px 0;
+    cursor: pointer;
+
+    &.active {
+        border: solid 1px $color-white;
+    }
+
+    @include breakpoint(desktop) {
+        padding: 23px;
+    }
+}

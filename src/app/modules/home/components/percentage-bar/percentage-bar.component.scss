@@ -1,0 +1,40 @@
+@import '../../../../../sass/variables.scss';
+
+.percentage-bar {
+    height: 36px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    align-items: center;
+    
+    .percentage-value {
+        position: relative;
+        display: flex;
+        gap: 6px;
+        z-index: 1;
+
+        span {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+
+    .positive-percentage,
+    .negative-percentage {
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .positive-percentage {
+        background-color: $color-green-positive-percentage;
+        left: 0;
+    }
+    .negative-percentage {
+        background-color: $color-yellow-negative-percentage;
+        right: 0;
+    }
+}

@@ -1,4 +1,5 @@
 export interface Name {
+  id: number;
   name: string;
   description: string;
   category: string;
@@ -8,4 +9,15 @@ export interface Name {
     positive: number;
     negative: number;
   };
+  wikipedia: string;
+}
+
+export enum Theme {
+  light,
+  dark
+}
+
+export enum VoteType {
+  up,
+  down
 }

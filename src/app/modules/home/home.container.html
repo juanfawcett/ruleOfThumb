@@ -1,10 +1,8 @@
-<app-header></app-header>
+<app-header [featured]="featuredName"></app-header>
 <div class="max-centered">
   <app-aside-speak-out></app-aside-speak-out>
   <main role="main">
-    <!-- Start: Implementation -->
-    👉 Your code goes here 👈
-    <!-- End: Implementation -->
+    <app-rulings-list [rulingList]="(rulingList$ | async) || []"></app-rulings-list>
   </main>
   <app-aside-add-name></app-aside-add-name>
 </div>

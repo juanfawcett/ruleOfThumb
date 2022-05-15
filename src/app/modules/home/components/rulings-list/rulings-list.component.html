@@ -1,0 +1,6 @@
+<div class="rulings-list-container">
+    <h2 class="title">Previous Rulings</h2>
+    <div class="ruling-list">
+        <app-ruling [rulingData]="ruling" *ngFor="let ruling of rulingList; trackBy: trackByFn"></app-ruling>
+    </div>
+</div>

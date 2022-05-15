@@ -8,3 +8,18 @@ $breakpoints: (
   tablet: $tablet,
   desktop: $desktop,
 ) !default;
+
+$color-green-positive: rgba(60, 187, 180, 1);
+$color-yellow-negative: rgba(249, 173, 29, 1);
+$color-green-positive-hover: rgba(60, 187, 180, 0.8);
+$color-green-positive-percentage: rgba(60, 187, 180, 0.6);
+$color-yellow-negative-hover: rgba(249, 173, 29, 0.8);
+$color-yellow-negative-percentage: rgba(249, 173, 29, 0.6);
+$color-dark-background: rgba(0, 0, 0, 0.4);
+$color-darker-background: rgba(0, 0, 0, 0.6);
+$color-darker-gray: rgba(51, 51, 51, 1);
+$color-dark-gray: rgba(70, 70, 70, 1);
+$color-light-gray: rgba(235, 235, 235, 1);
+$color-light-background: rgba(255, 255, 255, 0.4);
+$color-lighter-background: rgba(255, 255, 255, 0.8);
+$color-white: rgba(255, 255, 255, 1);

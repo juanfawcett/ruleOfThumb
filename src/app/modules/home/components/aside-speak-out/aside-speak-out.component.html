@@ -1,4 +1,4 @@
-<aside class="banner banner-top" role="doc-tip" aria-label="Speak Out">
+<aside class="banner banner-top" role="doc-tip" aria-label="Speak Out" (click)="close()" *ngIf="!isClosed">
   <div class="banner__left">
     <span class="banner__hairline">{{
       "ASIDE_SPEAK_OUT.HAIRLINE" | translate

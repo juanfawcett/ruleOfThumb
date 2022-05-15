@@ -8,5 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class AsideSpeakOutComponent implements OnInit {
   constructor() {}
 
+  public isClosed: boolean = false;
+
   ngOnInit(): void {}
+
+  public close(): void {
+    this.isClosed = true;
+  }
 }

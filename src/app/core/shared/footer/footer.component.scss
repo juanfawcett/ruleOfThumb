@@ -1,0 +1,83 @@
+@import '../../../../sass/variables.scss';
+@import '../../../../sass/mixins.scss';
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 1rem 3rem;
+
+  &__links li {
+    padding: 0.5rem 0;
+    font-size: 1.25rem;
+
+    a {
+      color: $color-dark-gray;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-darker-gray;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__social>span {
+    color: $color-darker-gray;
+    font-size: 1.25rem;
+    text-align: right;
+  }
+
+  &__social>ul {
+    display: flex;
+    margin-top: 1rem;
+
+    &>li {
+      margin-right: 1rem;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    align-items: flex-start;
+
+    &__links ul,
+    &__social {
+      display: flex;
+    }
+
+    &__links ul li {
+      padding: 0;
+      margin-right: 2rem;
+      font-size: 1.3rem;
+    }
+
+    &__social {
+      align-items: center;
+
+      span {
+        margin-right: 1rem;
+        color: $color-dark-gray;
+        font-size: 1.3rem;
+      }
+
+      &>ul {
+        margin-top: 3px;
+      }
+    }
+  }
+
+  @include breakpoint(desktop) {
+
+    &__links ul li {
+      font-size: 1rem;
+    }
+
+    &__social {
+      align-items: center;
+
+      span {
+        font-size: .85rem;
+      }
+    }
+  }
+}

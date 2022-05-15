@@ -1,0 +1,29 @@
+@import '../../../sass/variables.scss';
+@import '../../../sass/mixins.scss';
+
+main[role="main"] {
+  padding: 0 0 0 1rem;
+  margin-top: 2rem;
+
+  h2,
+  h3,
+  h4 {
+    color: $color-dark-gray;
+    font-weight: 300;
+  }
+
+  h2 {
+    margin: 0 0 2rem;
+    font-size: 2rem;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 0 1rem;
+  }
+
+  @include breakpoint(desktop) {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+}

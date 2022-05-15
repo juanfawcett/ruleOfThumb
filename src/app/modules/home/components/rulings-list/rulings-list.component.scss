@@ -1,0 +1,14 @@
+.ruling-list {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

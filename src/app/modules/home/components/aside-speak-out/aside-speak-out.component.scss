@@ -1,0 +1,79 @@
+@import '../../../../../sass/variables.scss';
+@import '../../../../../sass/mixins.scss';
+
+.banner {
+  
+  cursor: pointer;
+  
+  &__left {
+    flex-basis: 40%;
+    padding-right: 1rem;
+  }
+
+  &__left>&__hairline {
+    color: $color-dark-gray;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: -0.07rem;
+  }
+
+  &__left>&__title {
+    display: block;
+    color: $color-dark-gray;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.05rem;
+  }
+
+  &__right {
+    flex-basis: 60%;
+  }
+
+  &__text {
+    margin: 0;
+    color: $color-dark-gray;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: -0.05rem;
+  }
+
+  .icon-button {
+    display: none;
+  }
+
+  @include breakpoint(tablet) {
+    &__left {
+      flex-basis: 20%;
+    }
+
+    &__right {
+      flex-basis: 80%;
+    }
+
+    &__left>&__hairline {
+      font-size: 1rem;
+    }
+  
+    &__left>&__title {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include breakpoint(desktop) {
+
+    &__text,
+    &__left>&__hairline {
+      font-size: 1rem;
+    }
+
+    &__left>&__title {
+      font-size: 1.5rem;
+      letter-spacing: 0;
+    }
+
+    .icon-button {
+      display: block;
+      margin-left: 2rem;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<div class="percentage-bar">
+    <div class="positive-percentage" [style.width]="approvePercentage + '%'"></div>
+    <div class="percentage-value"><img [src]="thumbUpIconPath" /><span>{{approvePercentage | percentage}}</span></div>
+    <div class="negative-percentage" [style.width]="(100 - approvePercentage) + '%'"></div>
+    <div class="percentage-value"><span>{{100 - approvePercentage | percentage}}</span><img [src]="thumbDownIconPath" /></div>
+</div>
