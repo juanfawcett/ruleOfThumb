@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Name, VoteType } from '@core/interfaces/common.interfaces';
+import { Name } from '@core/interfaces/common.interfaces';
 import { Observable } from 'rxjs';
 import {
   lastVotedSelector,
@@ -18,10 +18,6 @@ export class HomeFacade {
 
   public requestNames(): void {
     this.store.dispatch(homeActions.requestNames());
-  }
-
-  public vote(voteType: VoteType, ruling: Name): void {
-    this.store.dispatch(homeActions.vote({voteType, ruling}));
   }
 
   public resetLastVoted(): void {

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Name, VoteType } from '@src/app/core/interfaces/common.interfaces';
+import { CommonFacade } from '@src/app/core/state/common.facade';
 import { filter } from 'rxjs';
 import { HomeFacade } from '../../state/home.facade';
 
@@ -10,7 +11,7 @@ import { HomeFacade } from '../../state/home.facade';
 })
 export class RulingComponent implements OnInit {
 
-  constructor(private facade: HomeFacade) { }
+  constructor(private facade: HomeFacade, private commonFacade: CommonFacade) { }
 
   readonly voteType = VoteType;
 
@@ -29,7 +30,7 @@ export class RulingComponent implements OnInit {
       this.hasVoted = false;
       this.facade.resetLastVoted();
     } else {
-      this.facade.vote(this.selectedVote as VoteType, this.rulingData)
+      this.commonFacade.vote(this.selectedVote as VoteType, this.rulingData)
     }
   }
 

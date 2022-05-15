@@ -28,10 +28,14 @@ export const FEATURE_REDUCER_TOKEN = new InjectionToken<
     EffectsModule.forFeature([HomeEffects]), TranslateModule, GlobalPipesModule],
   declarations: [HomeContainer, AsideAddNameComponent, AsideSpeakOutComponent, RulingsListComponent, RulingComponent, PercentageBarComponent],
   exports: [],
-  providers: [HomeService, HomeFacade, {
+  providers: [
+    HomeService,
+    HomeFacade,
+    {
     provide: FEATURE_REDUCER_TOKEN,
     useValue: reducer,
-  },],
+    },
+  ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomeModule {}

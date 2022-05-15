@@ -13,6 +13,7 @@ import { CommonEffects } from '@core/state/common.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { CommonFacade } from './core/state/common.facade';
 import { rootReducer } from './core/state/common.reducer';
+import { CommonService } from './core/services/common.service';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -44,6 +45,7 @@ export const ROOT_REDUCER_TOKEN = new InjectionToken('Common Reducer');
   ],
   providers: [
     CommonFacade,
+    CommonService,
     {
       provide: ROOT_REDUCER_TOKEN,
       useValue: rootReducer,
