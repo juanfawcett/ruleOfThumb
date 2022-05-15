@@ -12,6 +12,11 @@ export interface Name {
   wikipedia: string;
 }
 
+export interface LastVoted {
+  id: number | null;
+  source: Source;
+}
+
 export enum Theme {
   light,
   dark
@@ -20,4 +25,9 @@ export enum Theme {
 export enum VoteType {
   up,
   down
+}
+
+export enum Source {
+  header,
+  list
 }

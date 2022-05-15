@@ -14,5 +14,7 @@
             <button class="vote-button" [disabled]="selectedVote === null" (click)="vote()">{{'HOME.RULING.'+(hasVoted ? 'VOTE_AGAIN' : 'VOTE') | translate}}</button>
         </div>
     </div>
-    <app-percentage-bar [approvePercentage]="approvePercentage"></app-percentage-bar>
+    <div class="percentage">
+        <app-percentage-bar [approvePercentage]="approvePercentage"></app-percentage-bar>
+    </div>
 </div>

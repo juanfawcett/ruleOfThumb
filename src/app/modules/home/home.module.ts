@@ -15,7 +15,6 @@ import { homeFeatureName, reducer } from './state/home.reducer';
 import { HomeState } from './state/home.state';
 import { RulingsListComponent } from './components/rulings-list/rulings-list.component';
 import { RulingComponent } from './components/ruling/ruling.component';
-import { PercentageBarComponent } from './components/percentage-bar/percentage-bar.component';
 import { GlobalPipesModule } from '@src/app/core/pipes/global-pipes.module';
 
 export const FEATURE_REDUCER_TOKEN = new InjectionToken<
@@ -26,7 +25,7 @@ export const FEATURE_REDUCER_TOKEN = new InjectionToken<
   imports: [
     CommonModule, HomeRoutingModule, SharedModule, StoreModule.forFeature(homeFeatureName, FEATURE_REDUCER_TOKEN),
     EffectsModule.forFeature([HomeEffects]), TranslateModule, GlobalPipesModule],
-  declarations: [HomeContainer, AsideAddNameComponent, AsideSpeakOutComponent, RulingsListComponent, RulingComponent, PercentageBarComponent],
+  declarations: [HomeContainer, AsideAddNameComponent, AsideSpeakOutComponent, RulingsListComponent, RulingComponent],
   exports: [],
   providers: [
     HomeService,

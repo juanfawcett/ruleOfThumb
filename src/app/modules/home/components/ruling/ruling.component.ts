@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Name, VoteType } from '@src/app/core/interfaces/common.interfaces';
+import { LastVoted, Name, Source, VoteType } from '@src/app/core/interfaces/common.interfaces';
 import { CommonFacade } from '@src/app/core/state/common.facade';
 import { filter } from 'rxjs';
 import { HomeFacade } from '../../state/home.facade';
@@ -21,7 +21,7 @@ export class RulingComponent implements OnInit {
   public hasVoted: boolean = false;
 
   ngOnInit(): void {
-    this.facade.lastVotedId$.pipe(filter((lastVotedId: number | null) => lastVotedId === this.rulingData.id)).subscribe(() => this.hasVoted = true);
+    this.facade.lastVoted$.pipe(filter((lastVoted: LastVoted) => lastVoted.id === this.rulingData.id && lastVoted.source === Source.list)).subscribe(() => this.hasVoted = true);
   }
 
   public vote() {
@@ -30,7 +30,7 @@ export class RulingComponent implements OnInit {
       this.hasVoted = false;
       this.facade.resetLastVoted();
     } else {
-      this.commonFacade.vote(this.selectedVote as VoteType, this.rulingData)
+      this.commonFacade.vote(this.selectedVote as VoteType, this.rulingData, Source.list)
     }
   }
 

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { Name, Theme, VoteType } from '../interfaces/common.interfaces';
+import { Name, Source, Theme, VoteType } from '../interfaces/common.interfaces';
 import * as commonActions from './common.actions';
 
 @Injectable()
@@ -14,7 +14,7 @@ export class CommonFacade {
     this.store.dispatch(commonActions.setTheme({theme}));
   }
 
-  public vote(voteType: VoteType, ruling: Name): void {
-    this.store.dispatch(commonActions.vote({voteType, ruling}));
+  public vote(voteType: VoteType, ruling: Name, source: Source): void {
+    this.store.dispatch(commonActions.vote({voteType, ruling, source}));
   }
 }

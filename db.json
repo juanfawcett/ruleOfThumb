@@ -8,8 +8,8 @@
       "picture": "../assets/img/pope-francis.png",
       "lastUpdated": "2020-03-10T23:08:57.892Z",
       "votes": {
-        "positive": 54,
-        "negative": 86
+        "positive": 11,
+        "negative": 10
       },
       "wikipedia": "http://wikipedia.com"
     },
@@ -35,7 +35,7 @@
       "lastUpdated": "2020-12-10T23:41:07.120Z",
       "votes": {
         "positive": 45,
-        "negative": 101
+        "negative": 102
       },
       "wikipedia": "http://wikipedia.com"
     },

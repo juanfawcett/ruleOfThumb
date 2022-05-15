@@ -16,9 +16,9 @@ export class CommonEffects {
   public vote$: Observable<Action> = createEffect(() =>
     this.actions$.pipe(
       ofType(CommonActions.vote),
-      switchMap(({voteType, ruling}) => {
+      switchMap(({voteType, ruling, source}) => {
         const data = this.service.vote(voteType, ruling);
-        return data.pipe(mergeMap(() => [HomeActions.requestNames(), HomeActions.setLastVoted({lastVotedId: ruling.id})]),)
+        return data.pipe(mergeMap(() => [HomeActions.requestNames(), HomeActions.setLastVoted({lastVotedId: ruling.id, source})]),)
       }),
     ),
   );

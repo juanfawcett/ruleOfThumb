@@ -14,5 +14,5 @@ export const namesSelector = createSelector(
 
 export const lastVotedSelector = createSelector(
   homeRootSelector,
-  (data) => data?.lastVotedId,
+  (data) => data?.lastVoted,
 );

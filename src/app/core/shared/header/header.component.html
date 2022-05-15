@@ -34,11 +34,14 @@
           {{ "HEADER.WIYV" | translate }}
         </p>
         <div class="featured-card__buttons">
-          <div>
-            <app-thumb-button [type]="voteType.up"></app-thumb-button>
+          <div *ngIf="!hasVoted">
+            <app-thumb-button [type]="voteType.up" (click)="vote(voteType.up)"></app-thumb-button>
           </div>
-          <div>
-            <app-thumb-button [type]="voteType.down"></app-thumb-button>
+          <div *ngIf="!hasVoted">
+            <app-thumb-button [type]="voteType.down" (click)="vote(voteType.down)"></app-thumb-button>
+          </div>
+          <div class="percentage" *ngIf="hasVoted">
+            <app-percentage-bar [approvePercentage]="approvePercentage"></app-percentage-bar>
           </div>
         </div>
       </div>

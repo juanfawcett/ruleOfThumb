@@ -83,6 +83,10 @@
 
       div {
         flex-basis: 50%;
+
+        &.percentage {
+          flex-basis: 100%;
+        }
       }
     }
 

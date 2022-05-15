@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { Name, Theme, VoteType } from '../interfaces/common.interfaces';
+import { Name, Source, Theme, VoteType } from '../interfaces/common.interfaces';
 
 export const setTheme = createAction(
   '[Common] Set Theme',
@@ -8,5 +8,5 @@ export const setTheme = createAction(
 
 export const vote = createAction(
   '[Home] Vote',
-  props<{ voteType: VoteType, ruling: Name }>(),
+  props<{ voteType: VoteType, ruling: Name, source: Source }>(),
 );
