@@ -29,12 +29,6 @@ body {
     list-style: none;
   }
 
-  hr[role="separator"] {
-    border: 0 none;
-    border-bottom: 2px dotted $color-dark-gray;
-    margin: 1.5rem 1rem;
-  }
-
   .capitalize {
     text-transform: capitalize;
   }
@@ -97,10 +91,6 @@ body {
   html,
   body {
     font-size: 14px;
-
-    hr[role="separator"] {
-      margin: 3rem 1.5rem;
-    }
   }
 
   .banner {

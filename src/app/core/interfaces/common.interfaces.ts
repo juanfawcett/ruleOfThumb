@@ -18,8 +18,8 @@ export interface LastVoted {
 }
 
 export enum Theme {
-  light,
-  dark
+  light = 'light',
+  dark = 'dark'
 }
 
 export enum VoteType {

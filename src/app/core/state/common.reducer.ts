@@ -5,9 +5,12 @@ import { CommonState } from './common.state';
 
 export const commonFeatureName = 'common';
 
+const initialDisplay: Theme = localStorage.getItem('theme') as Theme || Theme.light;
+const initialLanguage: Language = localStorage.getItem('language') as Language || Language.en;
+
 export const initialState: CommonState = {
-  theme: Theme.light,
-  language: Language.en
+  theme: initialDisplay,
+  language: initialLanguage
 };
 
 const commonReducer = createReducer(

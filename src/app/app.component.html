@@ -1,6 +1,8 @@
-<app-nav></app-nav>
-<router-outlet></router-outlet>
-<div class="max-centered">
-  <hr role="separator" />
-  <app-footer></app-footer>
+<div class="container" [class.dark]="selectedTheme === theme.dark">
+  <app-nav></app-nav>
+  <router-outlet></router-outlet>
+  <div class="max-centered">
+    <hr role="separator" />
+    <app-footer></app-footer>
+  </div>
 </div>

@@ -11,10 +11,12 @@ export class CommonFacade {
   public language$: Observable<Language> = this.store.select((store) => store.common?.language);
 
   public setTheme(theme: Theme): void {
+    localStorage.setItem('theme', theme);
     this.store.dispatch(commonActions.setTheme({theme}));
   }
 
   public setLanguage(language: Language): void {
+    localStorage.setItem('language', language);
     this.store.dispatch(commonActions.setLanguage({language}));
   }
 

@@ -1,4 +1,4 @@
-<div class="ruling-list-container">
+<div class="ruling-list-container" [class.dark]="selectedTheme === theme.dark">
     <div class="ruling-list-header">
         <h2 class="title">{{ "HOME.RULING.PREVIOUS_RULINGS" | translate }}</h2>
         <app-dropdown></app-dropdown>

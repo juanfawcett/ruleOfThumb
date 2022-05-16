@@ -1,0 +1,27 @@
+@import '../sass/variables.scss';
+@import '../sass/mixins.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  &.dark {
+    background-color: $dark-background;
+
+    hr[role="separator"] {
+      border-color: $color-white;
+    }
+  }
+
+  hr[role="separator"] {
+    border: 0 none;
+    border-bottom: 2px dotted $color-dark-gray;
+    margin: 1.5rem 1rem;
+  }
+
+  @include breakpoint(tablet) {
+    hr[role="separator"] {
+      margin: 3rem 1.5rem;
+    }
+  }
+}

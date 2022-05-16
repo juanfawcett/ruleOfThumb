@@ -22,6 +22,18 @@
     flex-basis: 100%;
   }
 
+  .nav-options {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .theme {
+    width: 40px;
+    cursor: pointer;
+  }
+
   &__logo {
     color: $color-white;
     font-size: 2rem;
@@ -34,6 +46,7 @@
     right: 1rem;
     width: 25px;
     height: 20px;
+    margin-left: 15px;
   }
 
   &__links {
@@ -92,13 +105,24 @@
     outline: 0 none;
   }
 
+  @include breakpoint(tablet) {
+    .nav-options {
+      gap: 40px;
+    }
+  }
+
   @include breakpoint(desktop) {
 
     &__hamburger {
       display: none;
     }
 
+    .nav-options {
+      gap: 20px;
+    }
+
     &__links {
+      position: unset;
       display: flex;
       top: 3rem;
       right: 0;

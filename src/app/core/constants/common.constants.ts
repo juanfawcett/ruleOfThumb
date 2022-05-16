@@ -11,6 +11,6 @@ export const listHeights = {
 }
 
 export const FLAGS = {
-    en: '🇺🇸',
-    es: '🇪🇸'
+    en: '../../../assets/img/usa-flag.svg',
+    es: '../../../assets/img/spain-flag.svg'
 }

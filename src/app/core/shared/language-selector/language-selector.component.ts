@@ -18,8 +18,10 @@ export class LanguageSelectorComponent implements OnInit {
   readonly flags = FLAGS;
 
   public isOpened: boolean = false;
+  public selectedLanguage: Language = Language.es;
 
   ngOnInit(): void {
+    this.facade.language$.subscribe((language) => this.selectedLanguage = language);
   }
 
   public toggleOpen(): void {
@@ -29,9 +31,5 @@ export class LanguageSelectorComponent implements OnInit {
   public setValue(value: Language): void {
     this.isOpened = false;
     this.facade.setLanguage(value)
-  }
-
-  get selectedLanguage$(): Observable<Language> {
-    return this.facade.language$;
   }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { Theme } from './core/interfaces/common.interfaces';
 import { CommonFacade } from './core/state/common.facade';
 
 @Component({
@@ -14,7 +15,12 @@ export class AppComponent implements OnInit{
   }
   title = 'ruleOfThumb';
 
+  readonly theme = Theme;
+
+  public selectedTheme: Theme = this.theme.light;
+
   ngOnInit(): void {
     this.facade.language$.subscribe((language) => this.translate.use(language));
+    this.facade.theme$.subscribe((theme) => this.selectedTheme = theme);
   }
 }

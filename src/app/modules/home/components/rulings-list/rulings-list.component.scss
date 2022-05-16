@@ -1,6 +1,10 @@
 @import '../../../../../sass/mixins.scss';
 
 .ruling-list-container {
+
+  &.dark {
+    color: $color-white;
+  }
   
   .ruling-list-header {
     display: flex;
