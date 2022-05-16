@@ -8,7 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "fix-lint-and-prettier": "tslint --fix -c ./tslint.json 'src/**/*{.ts,.tsx}' && prettier --write .",
-    "generate-documentation": "npx compodoc -p tsconfig.doc.json -s --port=4400"
+    "generate-documentation": "npx compodoc -p tsconfig.doc.json -s --port=4400",
+    "run-server": "json-server --watch db.json --port=3000",
+    "containerize": "docker build -t run-of-thumb:latest . && Docker run -d -p 8080:80 run-of-thumb:latest && docker ps"
   },
   "private": true,
   "dependencies": {
