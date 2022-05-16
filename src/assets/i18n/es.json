@@ -1,5 +1,44 @@
 {
   "NAV": {
-    "login": "Iniciar Sesión"
+    "LOGIN": "Iniciar Sesión",
+    "SIGN_UP": "Registrarse",
+    "TRIALS": "Pruebas Anteriores",
+    "HOW_IT_WORKS": "Cómo Funciona"
+  },
+  "HEADER": {
+    "WIYOO": "¿Cuál es tu opinión sobre",
+    "MORE_INFO": "Más información",
+    "WIYV": "¿Cuál es tu veredicto?",
+    "CLOSING_IN": "Termina en"
+  },
+  "FOOTER": {
+    "TYC": "Terminos y Condiciones",
+    "PRIVACY": "Política de privacidad",
+    "CONTACT": "Contáctanos",
+    "FOLLOW": "Síguenos"
+  },
+  "COMMON": {
+    "DAY": "día",
+    "DAYS": "días",
+    "MONTH": "mes",
+    "MONTHS": "meses",
+    "IN": "en"
+  },
+  "ASIDE_ADD_NAME": {
+    "DESCRIPTION": "¿Hay alguien más a quién quisieras agregar?",
+    "SUBMIT": "Registra un nombre"
+  },
+  "ASIDE_SPEAK_OUT": {
+    "DESCRIPTION": "Rule of Thumb™️ es un tribunal de opinión pública de origen multitudinario donde todos y cada uno pueden hablar claro y libremente. Es fácil: Compartes tu opinión, nosotros la analizamos y la hacemos pública.",
+    "HAIRLINE": "Habla claro. Sé escuchado.",
+    "TITLE": "Sé tenido en cuenta"
+  },
+  "HOME": {
+    "RULING": {
+      "VOTE": "Votar",
+      "VOTE_AGAIN": "Votar otra vez",
+      "THANKS": "¡Gracias por tu voto!",
+      "PREVIOUS_RULINGS": "Sentenciados"
+    }
   }
 }

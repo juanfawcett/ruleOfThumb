@@ -8,6 +8,7 @@ import { NavComponent } from './nav/nav.component';
 import { PercentageBarComponent } from './percentage-bar/percentage-bar.component';
 import { ThumbButtonComponent } from './thumb-button/thumb-button.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { LanguageSelectorComponent } from './language-selector/language-selector.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, GlobalPipesModule],
@@ -17,7 +18,8 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     NavComponent,
     ThumbButtonComponent,
     PercentageBarComponent,
-    DropdownComponent
+    DropdownComponent,
+    LanguageSelectorComponent
   ],
   exports: [
     HeaderComponent,
@@ -25,7 +27,8 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     NavComponent,
     ThumbButtonComponent,
     PercentageBarComponent,
-    DropdownComponent
+    DropdownComponent,
+    LanguageSelectorComponent
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

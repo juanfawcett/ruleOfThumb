@@ -1,0 +1,10 @@
+<div class="phamtom-block" (click)="toggleOpen()" [class.active]="isOpened"></div>
+<div class="dropdown-container">
+    <button class="dropdown-button" (click)="toggleOpen()"><span>{{selectedLanguage$ | async}}</span><img class="icon" [class.active]="isOpened" [src]="triangleIcon"/></button>
+    <div *ngIf="isOpened" class="dropdown-box">
+        <ul class="dropdown-items">
+            <li class="dropdown-item" (click)="setValue(languages.en)">{{flags.en}}</li>
+            <li class="dropdown-item" (click)="setValue(languages.es)">{{flags.es}}</li>
+        </ul>
+    </div>
+</div>

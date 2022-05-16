@@ -1,0 +1,88 @@
+@import '../../../../sass/variables.scss';
+@import '../../../../sass/mixins.scss';
+
+.dropdown-container {
+    position: relative;
+
+    .dropdown-button,
+    .dropdown-box {
+        border: 2px solid #333333;
+        background-color: $color-white;
+        font-size: 10.5px;
+        text-align: center;
+    }
+
+    .dropdown-button {
+        height: 28px;
+        padding: 5px;
+        width: 60px;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+
+        span {
+            flex-basis: 90%;
+        }
+
+        .icon {
+            flex-basis: 10%;
+            transition: transform .2s;
+
+            &.active {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .dropdown-box {
+        position: absolute;
+        top: 28px;
+        left: 0;
+        z-index: 99;
+        border-top: none;
+        width: 100%;
+        box-sizing: border-box;
+
+        .dropdown-item {
+            height: 28px;
+            line-height: 28px;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                border-bottom: 2px solid #333333;
+            }
+        }
+    }
+
+    @include breakpoint(desktop) {
+
+        .dropdown-button,
+        .dropdown-box {
+            font-size: 13.5px;
+        }
+
+        .dropdown-box {
+            top: 36px;
+
+            .dropdown-item {
+                box-sizing: border-box;
+                height: 36px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+
+.phamtom-block {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}

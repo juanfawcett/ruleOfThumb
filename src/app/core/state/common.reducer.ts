@@ -1,12 +1,13 @@
 import { createReducer, Action, on } from '@ngrx/store';
-import { Theme } from '../interfaces/common.interfaces';
+import { Language, Theme } from '../interfaces/common.interfaces';
 import * as commonActions from './common.actions';
 import { CommonState } from './common.state';
 
 export const commonFeatureName = 'common';
 
 export const initialState: CommonState = {
-  theme: Theme.light
+  theme: Theme.light,
+  language: Language.en
 };
 
 const commonReducer = createReducer(
@@ -15,6 +16,12 @@ const commonReducer = createReducer(
     return {
       ...state,
       theme,
+    };
+  }),
+  on(commonActions.setLanguage, (state, { language }) => {
+    return {
+      ...state,
+      language,
     };
   }),
 );

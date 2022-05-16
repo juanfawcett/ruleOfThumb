@@ -36,3 +36,8 @@ export enum Display {
   list = 'List',
   grid = 'Grid'
 }
+
+export enum Language {
+  es = 'es',
+  en = 'en'
+}

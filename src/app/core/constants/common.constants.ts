@@ -9,3 +9,8 @@ export const listHeights = {
     tablet: '142px',
     desktop: '170px'
 }
+
+export const FLAGS = {
+    en: '🇺🇸',
+    es: '🇪🇸'
+}
