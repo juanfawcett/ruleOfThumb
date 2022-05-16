@@ -13,8 +13,8 @@
             <p class="time-and-category" *ngIf="!hasVoted">{{rulingData?.lastUpdated | relativeTime}} {{"COMMON.IN" | translate}} <span class="capitalize">{{rulingData?.category}}</span></p>   
             <p class="time-and-category" *ngIf="hasVoted">{{"HOME.RULING.THANKS" | translate}}</p>
             <div class="vote-section">
-                <div class="thumb-button-container" *ngIf="!hasVoted"><app-thumb-button [selected]="selectedVote === voteType.up" [type]="voteType.up" (click)="selectVote(voteType.up)"></app-thumb-button></div>
-                <div class="thumb-button-container" *ngIf="!hasVoted"><app-thumb-button [selected]="selectedVote === voteType.down" [type]="voteType.down" (click)="selectVote(voteType.down)"></app-thumb-button></div>
+                <div class="thumb-button-container" *ngIf="!hasVoted"><app-thumb-button [attr.aria-label]="voteType.up" [selected]="selectedVote === voteType.up" [type]="voteType.up" (click)="selectVote(voteType.up)"></app-thumb-button></div>
+                <div class="thumb-button-container" *ngIf="!hasVoted"><app-thumb-button [attr.aria-label]="voteType.down" [selected]="selectedVote === voteType.down" [type]="voteType.down" (click)="selectVote(voteType.down)"></app-thumb-button></div>
                 <button class="vote-button" [disabled]="selectedVote === null" (click)="vote()">{{'HOME.RULING.'+(hasVoted ? 'VOTE_AGAIN' : 'VOTE') | translate}}</button>
             </div>
         </div>

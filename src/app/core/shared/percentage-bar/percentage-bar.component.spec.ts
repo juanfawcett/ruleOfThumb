@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TestingModule } from '../../utils/testing.module';
 
 import { PercentageBarComponent } from './percentage-bar.component';
 
@@ -8,6 +9,7 @@ describe('PercentageBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [TestingModule],
       declarations: [ PercentageBarComponent ]
     })
     .compileComponents();

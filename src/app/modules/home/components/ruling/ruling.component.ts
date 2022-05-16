@@ -12,7 +12,7 @@ import { HomeFacade } from '../../state/home.facade';
 })
 export class RulingComponent implements OnInit {
 
-  constructor(private facade: HomeFacade, private commonFacade: CommonFacade) { }
+  constructor(public facade: HomeFacade, private commonFacade: CommonFacade) { }
 
   readonly voteType = VoteType;
   readonly displayOptions = Display;

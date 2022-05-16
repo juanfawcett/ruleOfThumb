@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TestingModule } from '../../utils/testing.module';
 
 import { ThumbButtonComponent } from './thumb-button.component';
 
@@ -8,6 +9,7 @@ describe('VoteButtonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [TestingModule],
       declarations: [ ThumbButtonComponent ]
     })
     .compileComponents();

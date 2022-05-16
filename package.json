@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "coverage": "ng test --no-watch --code-coverage",
     "fix-lint-and-prettier": "tslint --fix -c ./tslint.json 'src/**/*{.ts,.tsx}' && prettier --write .",
     "generate-documentation": "npx compodoc -p tsconfig.doc.json -s --port=4400",
     "run-server": "json-server --watch db.json --port=3000",

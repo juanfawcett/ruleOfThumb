@@ -4,6 +4,7 @@ import {
   HttpClientTestingModule,
 } from '@angular/common/http/testing';
 import { CommonService } from './common.service';
+import { TestingModule } from '../utils/testing.module';
 
 describe('ConditionsService', () => {
   let service: CommonService;
@@ -11,7 +12,7 @@ describe('ConditionsService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
+      imports: [HttpClientTestingModule, TestingModule],
       providers: [CommonService],
     });
 
