@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { Name, Source } from '@core/interfaces/common.interfaces';
+import { Display, Name, Source } from '@core/interfaces/common.interfaces';
 
 export const requestNames = createAction('[Home] Request Names');
 
@@ -11,4 +11,9 @@ export const responseNames = createAction(
 export const setLastVoted = createAction(
   '[Home] Set Last Voted',
   props<{ lastVotedId: number | null, source: Source }>(),
+);
+
+export const setDisplay = createAction(
+  '[Home] Set Display',
+  props<{ display: Display }>(),
 );

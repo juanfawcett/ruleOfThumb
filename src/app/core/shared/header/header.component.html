@@ -1,8 +1,8 @@
 <header class="hero">
   <img
     class="hero__background"
-    src="assets/img/pope-francis.png"
-    alt="Pope Francis"
+    [src]="featured?.picture"
+    [attr.alt]="featured?.name"
   />
   <div class="max-centered">
     <div class="hero__featured-card">

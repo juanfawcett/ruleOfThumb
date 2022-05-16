@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Name } from '@src/app/core/interfaces/common.interfaces';
+import { Display, Name } from '@src/app/core/interfaces/common.interfaces';
 
 @Component({
   selector: 'app-rulings-list',
@@ -10,7 +10,10 @@ export class RulingsListComponent implements OnInit {
 
   constructor() { }
 
+  readonly displayOptions = Display;
+
   @Input() rulingList: Name[] = [];
+  @Input() display: Display | null = Display.grid;
 
   ngOnInit(): void {
   }

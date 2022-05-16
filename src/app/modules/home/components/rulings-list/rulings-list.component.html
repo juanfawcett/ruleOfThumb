@@ -1,6 +1,9 @@
-<div class="rulings-list-container">
-    <h2 class="title">Previous Rulings</h2>
-    <div class="ruling-list">
-        <app-ruling [rulingData]="ruling" *ngFor="let ruling of rulingList; trackBy: trackByFn"></app-ruling>
+<div class="ruling-list-container">
+    <div class="ruling-list-header">
+        <h2 class="title">Previous Rulings</h2>
+        <app-dropdown></app-dropdown>
+    </div>
+    <div class="ruling-list" [class.grid]="display === displayOptions.grid">
+        <app-ruling [rulingData]="ruling" [display]="display" *ngFor="let ruling of rulingList; trackBy: trackByFn"></app-ruling>
     </div>
 </div>

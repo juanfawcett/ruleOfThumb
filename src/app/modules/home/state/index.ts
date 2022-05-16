@@ -16,3 +16,8 @@ export const lastVotedSelector = createSelector(
   homeRootSelector,
   (data) => data?.lastVoted,
 );
+
+export const displaySelector = createSelector(
+  homeRootSelector,
+  (data) => data?.display,
+);

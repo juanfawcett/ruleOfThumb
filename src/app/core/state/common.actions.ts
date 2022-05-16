@@ -7,6 +7,6 @@ export const setTheme = createAction(
 );
 
 export const vote = createAction(
-  '[Home] Vote',
+  '[Common] Vote',
   props<{ voteType: VoteType, ruling: Name, source: Source }>(),
 );

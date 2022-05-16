@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Name } from '@src/app/core/interfaces/common.interfaces';
+import { Display, Name } from '@src/app/core/interfaces/common.interfaces';
 import { Observable } from 'rxjs';
 import { HomeFacade } from './state/home.facade';
 
@@ -17,5 +17,9 @@ export class HomeContainer implements OnInit {
 
   get rulingList$(): Observable<Name[]> {
     return this.facade.names$;
+  }
+
+  get display$(): Observable<Display> {
+    return this.facade.display$;
   }
 }

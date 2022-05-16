@@ -1,17 +1,22 @@
-<div class="ruling">
-    <img class="ruling-image" src="../../../../../assets/img/pope-francis.png">
+<div class="ruling" [style.height]="height" [class.list]="display === displayOptions.list" #ruling>
+    <img class="ruling-image" [src]="rulingData?.picture">
+    <div class="gradient" *ngIf="display === displayOptions.list"></div>
     <div class="ruling-info">
-        <div class="title">
-            <div class="thumb-button-container"><app-thumb-button [type]="approvePercentage > 50 ? voteType.up : voteType.down"></app-thumb-button></div>
-            <h1 class="name" [title]="rulingData?.name">{{rulingData?.name}}</h1>
+        <div class="first-section">
+            <div class="title">
+                <div class="thumb-button-container"><app-thumb-button [type]="approvePercentage > 50 ? voteType.up : voteType.down"></app-thumb-button></div>
+                <h1 class="name" [title]="rulingData?.name">{{rulingData?.name}}</h1>
+            </div>
+            <p class="description" [title]="rulingData?.description">{{rulingData?.description}}</p>
         </div>
-        <p class="description" [title]="rulingData?.description">{{rulingData?.description}}</p>
-        <p class="time-and-category" *ngIf="!hasVoted">{{rulingData?.lastUpdated | relativeTime}} {{"COMMON.IN" | translate}} <span class="capitalize">{{rulingData?.category}}</span></p>   
-        <p class="time-and-category" *ngIf="hasVoted">{{"HOME.RULING.THANKS" | translate}}</p>
-        <div class="vote-section">
-            <div class="thumb-button-container" *ngIf="!hasVoted"><app-thumb-button [selected]="selectedVote === voteType.up" [type]="voteType.up" (click)="selectVote(voteType.up)"></app-thumb-button></div>
-            <div class="thumb-button-container" *ngIf="!hasVoted"><app-thumb-button [selected]="selectedVote === voteType.down" [type]="voteType.down" (click)="selectVote(voteType.down)"></app-thumb-button></div>
-            <button class="vote-button" [disabled]="selectedVote === null" (click)="vote()">{{'HOME.RULING.'+(hasVoted ? 'VOTE_AGAIN' : 'VOTE') | translate}}</button>
+        <div class="second-section">
+            <p class="time-and-category" *ngIf="!hasVoted">{{rulingData?.lastUpdated | relativeTime}} {{"COMMON.IN" | translate}} <span class="capitalize">{{rulingData?.category}}</span></p>   
+            <p class="time-and-category" *ngIf="hasVoted">{{"HOME.RULING.THANKS" | translate}}</p>
+            <div class="vote-section">
+                <div class="thumb-button-container" *ngIf="!hasVoted"><app-thumb-button [selected]="selectedVote === voteType.up" [type]="voteType.up" (click)="selectVote(voteType.up)"></app-thumb-button></div>
+                <div class="thumb-button-container" *ngIf="!hasVoted"><app-thumb-button [selected]="selectedVote === voteType.down" [type]="voteType.down" (click)="selectVote(voteType.down)"></app-thumb-button></div>
+                <button class="vote-button" [disabled]="selectedVote === null" (click)="vote()">{{'HOME.RULING.'+(hasVoted ? 'VOTE_AGAIN' : 'VOTE') | translate}}</button>
+            </div>
         </div>
     </div>
     <div class="percentage">

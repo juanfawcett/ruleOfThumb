@@ -1,5 +1,5 @@
 import { createReducer, on, Action } from '@ngrx/store';
-import { Source } from '@src/app/core/interfaces/common.interfaces';
+import { Display, Source } from '@src/app/core/interfaces/common.interfaces';
 
 import * as homeActions from './home.actions';
 import { HomeState } from './home.state';
@@ -11,7 +11,8 @@ export const initialState: HomeState = {
   lastVoted: {
     id: null,
     source: Source.list
-  }
+  },
+  display: Display.list
 };
 
 const homeReducer = createReducer(
@@ -29,6 +30,12 @@ const homeReducer = createReducer(
         id: lastVotedId,
         source
       },
+    };
+  }),
+  on(homeActions.setDisplay, (state, { display }) => {
+    return {
+      ...state,
+      display
     };
   }),
 );

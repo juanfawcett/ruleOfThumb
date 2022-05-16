@@ -2,7 +2,7 @@
 <div class="max-centered">
   <app-aside-speak-out></app-aside-speak-out>
   <main role="main">
-    <app-rulings-list [rulingList]="(rulingList$ | async) || []"></app-rulings-list>
+    <app-rulings-list [rulingList]="(rulingList$ | async) || []" [display]="display$ | async"></app-rulings-list>
   </main>
   <app-aside-add-name></app-aside-add-name>
 </div>

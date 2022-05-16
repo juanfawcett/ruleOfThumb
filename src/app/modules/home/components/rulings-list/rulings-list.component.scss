@@ -1,14 +1,52 @@
-.ruling-list {
-  display: flex;
-  gap: 12px;
-  justify-content: flex-start;
-  overflow-y: hidden;
-  overflow-x: scroll;
+@import '../../../../../sass/mixins.scss';
 
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.ruling-list-container {
+  
+  .ruling-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  &::-webkit-scrollbar {
-    display: none;
+    .title {
+      font-size: 2rem;
+      line-height: 28.8px;
+      font-weight: 300;
+    }
+
+    app-dropdown {
+      display: none;
+    }
+  }
+
+  .ruling-list {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    overflow: scroll;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .ruling-list {
+      display: grid;
+      grid-gap: 21px;
+      grid-template-columns: 1fr;
+
+      &.grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .ruling-list-header {
+      app-dropdown {
+        display: block;
+      }
+    }
   }
 }

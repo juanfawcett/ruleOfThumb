@@ -39,6 +39,7 @@
 
   @include breakpoint(tablet) {
     align-items: flex-start;
+    margin: 0 1.5rem 3rem;
 
     &__links ul,
     &__social {

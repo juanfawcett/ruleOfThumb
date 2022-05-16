@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { LastVoted, Name, Source } from '@core/interfaces/common.interfaces';
+import { Display, LastVoted, Name, Source } from '@core/interfaces/common.interfaces';
 import { Observable } from 'rxjs';
 import {
+  displaySelector,
   lastVotedSelector,
   namesSelector
 } from '.';
@@ -15,6 +16,7 @@ export class HomeFacade {
 
   public names$: Observable<Name[]> = this.store.select(namesSelector);
   public lastVoted$: Observable<LastVoted> = this.store.select(lastVotedSelector);
+  public display$: Observable<Display> = this.store.select(displaySelector);
 
   public requestNames(): void {
     this.store.dispatch(homeActions.requestNames());
@@ -22,5 +24,9 @@ export class HomeFacade {
 
   public resetLastVoted(): void {
     this.store.dispatch(homeActions.setLastVoted({lastVotedId: null, source: Source.list}));
+  }
+
+  public setDisplay(display: Display): void {
+    this.store.dispatch(homeActions.setDisplay({display}));
   }
 }

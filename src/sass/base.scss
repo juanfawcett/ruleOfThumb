@@ -99,8 +99,12 @@ body {
     font-size: 14px;
 
     hr[role="separator"] {
-      margin: 3rem 1rem;
+      margin: 3rem 1.5rem;
     }
+  }
+
+  .banner {
+    margin: 1.5rem;
   }
 }
 
@@ -109,10 +113,6 @@ body {
   html,
   body {
     font-size: 18px;
-
-    hr[role="separator"] {
-      margin: 2rem 1rem;
-    }
   }
 
   .max-centered {
@@ -120,21 +120,11 @@ body {
     display: block;
     width: 100vw;
     max-width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .max-centered>*,
-  .max-centered>hr[role="separator"] {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 143px;
+    margin-left: 143px;
   }
 
   .max-centered main {
     padding: 0;
-  }
-
-  .banner {
-    margin: 0;
   }
 }

@@ -32,10 +32,7 @@
       left: -20%;
       width: 140%;
       height: 140%;
-      background: center no-repeat linear-gradient($color-dark-background,
-          $color-dark-background ),
-        -25vw 0/160vw no-repeat url("../../../../assets/img/pope-francis.png");
-      filter: blur(1rem);
+      background: center no-repeat linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), -32vw 0/160vw;
     }
 
     .featured-card__content {
@@ -107,7 +104,7 @@
     display: flex;
     width: 100%;
     height: 3rem;
-    background-color: $color-light-background;
+    background-color: $color-lighter-background;
 
     .closing-gauge__left {
       position: relative;
@@ -159,18 +156,14 @@
     height: 68vw;
 
     &__background {
-      top: -6.5rem;
+      top: 0;
       left: 0;
-      width: 110vw;
-      height: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     &__featured-card {
-      .featured-card__glass-background {
-        background: center no-repeat linear-gradient($color-dark-background,
-            $color-dark-background ),
-          7vw -6.5rem/115vw auto no-repeat url(../../../../assets/img/pope-francis.png);
-      }
 
       .featured-card__content {
         padding: 2rem 1.5rem;
@@ -216,12 +209,6 @@
       min-width: 600px;
       max-height: unset;
       margin-top: 2.5rem;
-
-      .featured-card__glass-background {
-        background: center no-repeat linear-gradient($color-dark-background,
-            $color-dark-background ),
-          calc(-50vw + 650px) -6rem/105vw auto no-repeat url(../../../../assets/img/pope-francis.png);
-      }
     
       .featured-card__content {
         padding: 2rem 1.5rem;

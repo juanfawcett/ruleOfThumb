@@ -31,3 +31,8 @@ export enum Source {
   header,
   list
 }
+
+export enum Display {
+  list = 'List',
+  grid = 'Grid'
+}

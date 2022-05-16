@@ -5,11 +5,11 @@
       "name": "Kanye West",
       "description": "Born in Atlanta and raised in Chicago, West was first known as a producer for Roc-A-Fella Records in the early 2000s, producing singles for several mainstream artists.",
       "category": "entertainment",
-      "picture": "../assets/img/pope-francis.png",
+      "picture": "https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2021/10/20/616feb70eb709.r_d.2811-1732-0.jpeg",
       "lastUpdated": "2020-03-10T23:08:57.892Z",
       "votes": {
-        "positive": 11,
-        "negative": 10
+        "positive": 14,
+        "negative": 11
       },
       "wikipedia": "http://wikipedia.com"
     },
@@ -18,10 +18,10 @@
       "name": "Mark Zuckerberg",
       "description": "Born in White Plains, New York, Zuckerberg attended Harvard University, where he launched the Facebook social networking service from his dormitory room on February 4, 2004.",
       "category": "business",
-      "picture": "../assets/img/pope-francis.png",
+      "picture": "https://okdiario.com/img/2022/02/09/mark-zuckerberg.jpg",
       "lastUpdated": "2021-02-14T23:10:19.134Z",
       "votes": {
-        "positive": 426,
+        "positive": 428,
         "negative": 420
       },
       "wikipedia": "http://wikipedia.com"
@@ -31,7 +31,7 @@
       "name": "Cristina Fernández de Kirchner",
       "description": "Her first term of office started with a conflict with the agricultural sector, and her proposed taxation system was rejected.",
       "category": "politics",
-      "picture": "../assets/img/pope-francis.png",
+      "picture": "https://cnnespanol.cnn.com/wp-content/uploads/2018/09/180903222229-argentina-cristina-fernandez-de-kirchner-perspectivas-buenos-aires-full-1691.jpg?quality=100&strip=info",
       "lastUpdated": "2020-12-10T23:41:07.120Z",
       "votes": {
         "positive": 45,
@@ -44,7 +44,7 @@
       "name": "Malala Yousafzai",
       "description": "The daughter of educational activist Ziauddin, Yousafzai was born to a Pashtun family in Mingora, Khyber Pakhtunkhwa, Pakistan. Her family came to run a chain of schools in the region.",
       "category": "politics",
-      "picture": "../assets/img/pope-francis.png",
+      "picture": "https://cnnespanol.cnn.com/wp-content/uploads/2021/03/210302130101-malala-yousafzai-file-2019-full-169.jpg?quality=100&strip=info",
       "lastUpdated": "2020-12-10T23:41:07.120Z",
       "votes": {
         "positive": 19,
@@ -57,7 +57,7 @@
       "name": "Elon Musk",
       "description": "In 2002, Musk founded SpaceX, an aerospace manufacturer and space transport services company, of which he is CEO, CTO, and lead designer.",
       "category": "business",
-      "picture": "../assets/img/pope-francis.png",
+      "picture": "https://phantom-marca.unidadeditorial.es/1019ed0a72dcfbffe748b8a69bac7fe1/resize/1320/f/jpg/assets/multimedia/imagenes/2022/05/06/16518234543202.jpg",
       "lastUpdated": "2020-12-20T23:43:38.041Z",
       "votes": {
         "positive": 1237,
@@ -70,7 +70,7 @@
       "name": "Greta Thumberg",
       "description": "Thunberg's activism started after convincing her parents to adopt several lifestyle choices to reduce their own carbon footprint.",
       "category": "environment",
-      "picture": "../assets/img/pope-francis.png",
+      "picture": "https://cdn.elnacional.com/wp-content/uploads/2020/08/Greta-Thunberg.jpeg",
       "lastUpdated": "2021-02-26T23:44:50.326Z",
       "votes": {
         "positive": 119,

@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './nav/nav.component';
 import { PercentageBarComponent } from './percentage-bar/percentage-bar.component';
 import { ThumbButtonComponent } from './thumb-button/thumb-button.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, GlobalPipesModule],
@@ -15,14 +16,16 @@ import { ThumbButtonComponent } from './thumb-button/thumb-button.component';
     FooterComponent,
     NavComponent,
     ThumbButtonComponent,
-    PercentageBarComponent
+    PercentageBarComponent,
+    DropdownComponent
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     NavComponent,
     ThumbButtonComponent,
-    PercentageBarComponent
+    PercentageBarComponent,
+    DropdownComponent
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
