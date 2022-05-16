@@ -6,13 +6,15 @@ import { HomeState } from './home.state';
 
 export const homeFeatureName = 'home';
 
+const initialDisplay: Display = localStorage.getItem('display') as Display || Display.list
+
 export const initialState: HomeState = {
   names: [],
   lastVoted: {
     id: null,
     source: Source.list
   },
-  display: Display.list
+  display: initialDisplay
 };
 
 const homeReducer = createReducer(

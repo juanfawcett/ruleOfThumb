@@ -27,6 +27,7 @@ export class HomeFacade {
   }
 
   public setDisplay(display: Display): void {
+    localStorage.setItem('display', display);
     this.store.dispatch(homeActions.setDisplay({display}));
   }
 }

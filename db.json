@@ -21,8 +21,8 @@
       "picture": "https://okdiario.com/img/2022/02/09/mark-zuckerberg.jpg",
       "lastUpdated": "2021-02-14T23:10:19.134Z",
       "votes": {
-        "positive": 428,
-        "negative": 420
+        "positive": 7,
+        "negative": 5
       },
       "wikipedia": "http://wikipedia.com"
     },
@@ -34,8 +34,8 @@
       "picture": "https://cnnespanol.cnn.com/wp-content/uploads/2018/09/180903222229-argentina-cristina-fernandez-de-kirchner-perspectivas-buenos-aires-full-1691.jpg?quality=100&strip=info",
       "lastUpdated": "2020-12-10T23:41:07.120Z",
       "votes": {
-        "positive": 45,
-        "negative": 102
+        "positive": 6,
+        "negative": 20
       },
       "wikipedia": "http://wikipedia.com"
     },
@@ -60,8 +60,8 @@
       "picture": "https://phantom-marca.unidadeditorial.es/1019ed0a72dcfbffe748b8a69bac7fe1/resize/1320/f/jpg/assets/multimedia/imagenes/2022/05/06/16518234543202.jpg",
       "lastUpdated": "2020-12-20T23:43:38.041Z",
       "votes": {
-        "positive": 1237,
-        "negative": 895
+        "positive": 20,
+        "negative": 5
       },
       "wikipedia": "http://wikipedia.com"
     },
@@ -73,8 +73,8 @@
       "picture": "https://cdn.elnacional.com/wp-content/uploads/2020/08/Greta-Thunberg.jpeg",
       "lastUpdated": "2021-02-26T23:44:50.326Z",
       "votes": {
-        "positive": 119,
-        "negative": 45
+        "positive": 9,
+        "negative": 1
       },
       "wikipedia": "http://wikipedia.com"
     },
@@ -86,8 +86,8 @@
       "picture": "../assets/img/pope-francis.png",
       "lastUpdated": "2021-02-26T23:44:50.326Z",
       "votes": {
-        "positive": 119,
-        "negative": 45
+        "positive": 9,
+        "negative": 2
       },
       "wikipedia": "http://wikipedia.com"
     }

@@ -23,7 +23,6 @@
   .gradient {
     display: none;
     position: absolute;
-    height: 142px;
     width: 100%;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.0001) 0%, #888888 26%, #666666 50%, rgba(51, 51, 51, 0.6) 71.88%);
   }
@@ -112,6 +111,8 @@
           color: $color-white;
           width: 107px;
           background: $color-dark-background;
+          font-size: 15px;
+          cursor: pointer;
 
           &:hover {
             background: $color-darker-background;
@@ -138,7 +139,6 @@
 
       .ruling-image {
         width: 27%;
-        height: 142px;
       }
 
       .gradient {
@@ -152,9 +152,10 @@
 
         .first-section {
           .title {
+            position: unset;
             .thumb-button-container {
               top: -4px;
-              left: -150px;
+              left: 0;
             }
 
             .name {
@@ -164,6 +165,73 @@
 
           .description {
             font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint(desktop) {
+    width: 100%;
+
+    &.list {
+
+      .ruling-info {
+        padding: 0 12px 0 260px;
+        gap: 50px;
+
+        .thumb-button-container {
+          width: 45px;
+          padding: 0;
+        }
+
+        .first-section {
+          margin-top: 15px;
+          .title {
+            .thumb-button-container {
+              top: 0;
+              left: 0;
+              height: 45px;
+            }
+
+            .name {
+              font-size: 36px;
+              line-height: 44px;
+            }
+          }
+
+          .description {
+            font-size: 18px;
+            height: 39px;
+          }
+        }
+
+        .second-section {
+  
+          .time-and-category {
+            font-size: 15px;
+          }
+          
+          .vote-section {
+            height: 45px;
+  
+            .vote-button {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .percentage {
+        height: 54px;
+      }
+    }
+
+    .ruling-info {
+      .first-section {
+        .title {
+          .name {
+            font-size: 34px;
           }
         }
       }

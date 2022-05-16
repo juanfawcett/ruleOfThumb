@@ -1,4 +1,5 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { DESKTOP_BREAKPOINT_SIZE, listHeights, TABLET_BREAKPOINT_SIZE } from '@src/app/core/constants/common.constants';
 import { Display, LastVoted, Name, Source, VoteType } from '@src/app/core/interfaces/common.interfaces';
 import { CommonFacade } from '@src/app/core/state/common.facade';
 import { filter } from 'rxjs';
@@ -16,7 +17,7 @@ export class RulingComponent implements OnInit {
   readonly voteType = VoteType;
   readonly displayOptions = Display;
 
-  @ViewChild('ruling', {static: true}) public ruling: ElementRef = {} as ElementRef;
+  @ViewChild('ruling', { static: true }) public ruling: ElementRef = {} as ElementRef;
 
   @Input() rulingData: Name = {} as Name;
   @Input() display: Display | null = Display.grid;
@@ -29,7 +30,7 @@ export class RulingComponent implements OnInit {
   }
 
   public vote() {
-    if(this.hasVoted) {
+    if (this.hasVoted) {
       this.selectedVote = null;
       this.hasVoted = false;
       this.facade.resetLastVoted();
@@ -38,16 +39,19 @@ export class RulingComponent implements OnInit {
     }
   }
 
-  public selectVote(voteType: VoteType){
+  public selectVote(voteType: VoteType) {
     this.selectedVote = voteType;
   }
 
   get approvePercentage(): number {
-    return (this.rulingData?.votes.positive * 100)/(this.rulingData?.votes.positive + this.rulingData?.votes.negative);
+    return (this.rulingData?.votes.positive * 100) / (this.rulingData?.votes.positive + this.rulingData?.votes.negative);
   }
 
   get height(): string {
-    return `${this.display === this.displayOptions.grid ? this.ruling?.nativeElement?.offsetWidth : this.display === this.displayOptions.list && window.innerWidth >= 768 ? 142 : 300}px`
+    if(this.display === this.displayOptions.grid) return `${this.ruling?.nativeElement?.offsetWidth}px`;
+    if(window.innerWidth >= DESKTOP_BREAKPOINT_SIZE) return `${listHeights.desktop}`;
+    if(window.innerWidth >= TABLET_BREAKPOINT_SIZE) return `${listHeights.tablet}`;
+    return `${listHeights.mobile}`;
   }
 
 }

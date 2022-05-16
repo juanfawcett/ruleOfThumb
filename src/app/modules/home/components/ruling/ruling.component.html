@@ -1,6 +1,6 @@
 <div class="ruling" [style.height]="height" [class.list]="display === displayOptions.list" #ruling>
-    <img class="ruling-image" [src]="rulingData?.picture">
-    <div class="gradient" *ngIf="display === displayOptions.list"></div>
+    <img class="ruling-image" [src]="rulingData?.picture" [style.height]="height">
+    <div class="gradient" *ngIf="display === displayOptions.list" [style.height]="height"></div>
     <div class="ruling-info">
         <div class="first-section">
             <div class="title">

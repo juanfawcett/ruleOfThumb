@@ -1,4 +1,5 @@
 @import '../../../../sass/variables.scss';
+@import '../../../../sass/mixins.scss';
 
 .dropdown-container {
     position: relative;
@@ -44,9 +45,35 @@
 
         .dropdown-item {
             height: 28px;
-            border-bottom: 2px solid #333333;
             line-height: 28px;
             cursor: pointer;
+
+            &:not(:last-child) {
+                border-bottom: 2px solid #333333;
+            }
+        }
+    }
+
+    @include breakpoint(desktop) {
+
+        .dropdown-button,
+        .dropdown-box {
+            font-size: 13.5px;
+        }
+
+        .dropdown-button {
+            height: 36px;
+            width: 173px;
+        }
+
+        .dropdown-box {
+            top: 36px;
+
+            .dropdown-item {
+                box-sizing: border-box;
+                height: 36px;
+                line-height: 36px;
+            }
         }
     }
 }
