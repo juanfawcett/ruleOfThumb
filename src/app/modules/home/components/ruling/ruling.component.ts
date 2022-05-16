@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, HostListener, Input, OnInit, ViewChild } from '@angular/core';
 import { DESKTOP_BREAKPOINT_SIZE, listHeights, TABLET_BREAKPOINT_SIZE } from '@src/app/core/constants/common.constants';
 import { Display, LastVoted, Name, Source, VoteType } from '@src/app/core/interfaces/common.interfaces';
 import { CommonFacade } from '@src/app/core/state/common.facade';
@@ -12,7 +12,7 @@ import { HomeFacade } from '../../state/home.facade';
 })
 export class RulingComponent implements OnInit {
 
-  constructor(public facade: HomeFacade, private commonFacade: CommonFacade) { }
+  constructor(public facade: HomeFacade, private commonFacade: CommonFacade, private changeDetectorRef: ChangeDetectorRef) { }
 
   readonly voteType = VoteType;
   readonly displayOptions = Display;
@@ -41,6 +41,11 @@ export class RulingComponent implements OnInit {
 
   public selectVote(voteType: VoteType) {
     this.selectedVote = voteType;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  documentHasResized($event: any): void {
+    this.changeDetectorRef.detectChanges();
   }
 
   get approvePercentage(): number {
