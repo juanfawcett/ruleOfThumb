@@ -1,0 +1,1155 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>rule-of-thumb documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">rule-of-thumb documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  RulingComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/home/components/ruling/ruling.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-ruling</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./ruling.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./ruling.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#displayOptions" >displayOptions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#hasVoted" >hasVoted</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ruling" >ruling</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectedVote" >selectedVote</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#voteType" >voteType</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectVote" >selectVote</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#vote" >vote</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#display" >display</a>
+                            </li>
+                            <li>
+                                <a href="#rulingData" >rulingData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#approvePercentage" >approvePercentage</a>
+                                </li>
+                                <li>
+                                    <a href="#height" >height</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(facade: <a href="../injectables/HomeFacade.html" target="_self">HomeFacade</a>, commonFacade: <a href="../injectables/CommonFacade.html" target="_self">CommonFacade</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:13</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>facade</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/HomeFacade.html" target="_self" >HomeFacade</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonFacade</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonFacade.html" target="_self" >CommonFacade</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="display"></a>
+                        <b>display</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#Display" target="_self" >Display | null</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>Display.grid</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rulingData"></a>
+                        <b>rulingData</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Name.html" target="_self" >Name</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{} as Name</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:22</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:28</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectVote"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>selectVote</b></span>
+                        <a href="#selectVote"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>selectVote(voteType: <a href="../undefineds/VoteType.html" target="_self">VoteType</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>voteType</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#VoteType" target="_self" >VoteType</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="vote"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>vote</b></span>
+                        <a href="#vote"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>vote()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="32"
+                            class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:32</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayOptions"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>displayOptions</b></span>
+                        <a href="#displayOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>Display</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasVoted"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>hasVoted</b></span>
+                        <a href="#hasVoted"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ruling"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>ruling</b></span>
+                        <a href="#ruling"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{} as ElementRef</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;ruling&#x27;, {static: true})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedVote"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>selectedVote</b></span>
+                        <a href="#selectedVote"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#VoteType" target="_self" >VoteType | null</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="voteType"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>voteType</b></span>
+                        <a href="#voteType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>VoteType</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="approvePercentage"></a>
+                        <span class="name"><b>approvePercentage</b><a href="#approvePercentage"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>approvePercentage()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:46</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="height"></a>
+                        <span class="name"><b>height</b><a href="#height"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>height()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/modules/home/components/ruling/ruling.component.ts:50</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ElementRef, Input, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { DESKTOP_BREAKPOINT_SIZE, listHeights, TABLET_BREAKPOINT_SIZE } from &#x27;@src/app/core/constants/common.constants&#x27;;
+import { Display, LastVoted, Name, Source, VoteType } from &#x27;@src/app/core/interfaces/common.interfaces&#x27;;
+import { CommonFacade } from &#x27;@src/app/core/state/common.facade&#x27;;
+import { filter } from &#x27;rxjs&#x27;;
+import { HomeFacade } from &#x27;../../state/home.facade&#x27;;
+
+@Component({
+  selector: &#x27;app-ruling&#x27;,
+  templateUrl: &#x27;./ruling.component.html&#x27;,
+  styleUrls: [&#x27;./ruling.component.scss&#x27;]
+})
+export class RulingComponent implements OnInit {
+
+  constructor(private facade: HomeFacade, private commonFacade: CommonFacade) { }
+
+  readonly voteType &#x3D; VoteType;
+  readonly displayOptions &#x3D; Display;
+
+  @ViewChild(&#x27;ruling&#x27;, { static: true }) public ruling: ElementRef &#x3D; {} as ElementRef;
+
+  @Input() rulingData: Name &#x3D; {} as Name;
+  @Input() display: Display | null &#x3D; Display.grid;
+
+  public selectedVote: VoteType | null &#x3D; null;
+  public hasVoted: boolean &#x3D; false;
+
+  ngOnInit(): void {
+    this.facade.lastVoted$.pipe(filter((lastVoted: LastVoted) &#x3D;&gt; lastVoted.id &#x3D;&#x3D;&#x3D; this.rulingData.id &amp;&amp; lastVoted.source &#x3D;&#x3D;&#x3D; Source.list)).subscribe(() &#x3D;&gt; this.hasVoted &#x3D; true);
+  }
+
+  public vote() {
+    if (this.hasVoted) {
+      this.selectedVote &#x3D; null;
+      this.hasVoted &#x3D; false;
+      this.facade.resetLastVoted();
+    } else {
+      this.commonFacade.vote(this.selectedVote as VoteType, this.rulingData, Source.list)
+    }
+  }
+
+  public selectVote(voteType: VoteType) {
+    this.selectedVote &#x3D; voteType;
+  }
+
+  get approvePercentage(): number {
+    return (this.rulingData?.votes.positive * 100) / (this.rulingData?.votes.positive + this.rulingData?.votes.negative);
+  }
+
+  get height(): string {
+    if(this.display &#x3D;&#x3D;&#x3D; this.displayOptions.grid) return &#x60;${this.ruling?.nativeElement?.offsetWidth}px&#x60;;
+    if(window.innerWidth &gt;&#x3D; DESKTOP_BREAKPOINT_SIZE) return &#x60;${listHeights.desktop}&#x60;;
+    if(window.innerWidth &gt;&#x3D; TABLET_BREAKPOINT_SIZE) return &#x60;${listHeights.tablet}&#x60;;
+    return &#x60;${listHeights.mobile}&#x60;;
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;ruling&quot; [style.height]&#x3D;&quot;height&quot; [class.list]&#x3D;&quot;display &#x3D;&#x3D;&#x3D; displayOptions.list&quot; #ruling&gt;
+    &lt;img class&#x3D;&quot;ruling-image&quot; [src]&#x3D;&quot;rulingData?.picture&quot; [style.height]&#x3D;&quot;height&quot;&gt;
+    &lt;div class&#x3D;&quot;gradient&quot; *ngIf&#x3D;&quot;display &#x3D;&#x3D;&#x3D; displayOptions.list&quot; [style.height]&#x3D;&quot;height&quot;&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;ruling-info&quot;&gt;
+        &lt;div class&#x3D;&quot;first-section&quot;&gt;
+            &lt;div class&#x3D;&quot;title&quot;&gt;
+                &lt;div class&#x3D;&quot;thumb-button-container&quot;&gt;&lt;app-thumb-button [type]&#x3D;&quot;approvePercentage &gt; 50 ? voteType.up : voteType.down&quot;&gt;&lt;/app-thumb-button&gt;&lt;/div&gt;
+                &lt;h1 class&#x3D;&quot;name&quot; [title]&#x3D;&quot;rulingData?.name&quot;&gt;{{rulingData?.name}}&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;description&quot; [title]&#x3D;&quot;rulingData?.description&quot;&gt;{{rulingData?.description}}&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;second-section&quot;&gt;
+            &lt;p class&#x3D;&quot;time-and-category&quot; *ngIf&#x3D;&quot;!hasVoted&quot;&gt;{{rulingData?.lastUpdated | relativeTime}} {{&quot;COMMON.IN&quot; | translate}} &lt;span class&#x3D;&quot;capitalize&quot;&gt;{{rulingData?.category}}&lt;/span&gt;&lt;/p&gt;   
+            &lt;p class&#x3D;&quot;time-and-category&quot; *ngIf&#x3D;&quot;hasVoted&quot;&gt;{{&quot;HOME.RULING.THANKS&quot; | translate}}&lt;/p&gt;
+            &lt;div class&#x3D;&quot;vote-section&quot;&gt;
+                &lt;div class&#x3D;&quot;thumb-button-container&quot; *ngIf&#x3D;&quot;!hasVoted&quot;&gt;&lt;app-thumb-button [selected]&#x3D;&quot;selectedVote &#x3D;&#x3D;&#x3D; voteType.up&quot; [type]&#x3D;&quot;voteType.up&quot; (click)&#x3D;&quot;selectVote(voteType.up)&quot;&gt;&lt;/app-thumb-button&gt;&lt;/div&gt;
+                &lt;div class&#x3D;&quot;thumb-button-container&quot; *ngIf&#x3D;&quot;!hasVoted&quot;&gt;&lt;app-thumb-button [selected]&#x3D;&quot;selectedVote &#x3D;&#x3D;&#x3D; voteType.down&quot; [type]&#x3D;&quot;voteType.down&quot; (click)&#x3D;&quot;selectVote(voteType.down)&quot;&gt;&lt;/app-thumb-button&gt;&lt;/div&gt;
+                &lt;button class&#x3D;&quot;vote-button&quot; [disabled]&#x3D;&quot;selectedVote &#x3D;&#x3D;&#x3D; null&quot; (click)&#x3D;&quot;vote()&quot;&gt;{{&#x27;HOME.RULING.&#x27;+(hasVoted ? &#x27;VOTE_AGAIN&#x27; : &#x27;VOTE&#x27;) | translate}}&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;percentage&quot;&gt;
+        &lt;app-percentage-bar [approvePercentage]&#x3D;&quot;approvePercentage&quot;&gt;&lt;/app-percentage-bar&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./ruling.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../../../sass/variables.scss&#x27;;
+@import &#x27;../../../../../sass/mixins.scss&#x27;;
+
+.ruling {
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: $color-white;
+  justify-content: flex-end;
+
+  &amp;-image {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.7);
+  }
+
+  .gradient {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.0001) 0%, #888888 26%, #666666 50%, rgba(51, 51, 51, 0.6) 71.88%);
+  }
+
+  &amp;-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px;
+    gap: 12px;
+
+    .first-section,
+    .second-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+
+    .thumb-button-container {
+      box-sizing: border-box;
+      padding: 4px 0;
+      width: 30px;
+      height: 100%;
+    }
+
+    .first-section {
+
+      .name,
+      .description {
+        margin: 0;
+      }
+
+      .title {
+        position: relative;
+
+        .thumb-button-container {
+          position: absolute;
+          height: 38px;
+          top: 0;
+          left: -32px;
+        }
+
+        .name {
+          font-size: 30px;
+          font-weight: 400;
+          line-height: 36px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+        }
+      }
+
+      .description {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 35px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+    }
+
+    .second-section {
+      .time-and-category {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14.4px;
+        text-align: right;
+        margin: 0;
+      }
+
+      .vote-section {
+        display: flex;
+        gap: 12px;
+        justify-content: flex-end;
+        height: 38px;
+
+        .vote-button {
+          border: 1px solid $color-white;
+          color: $color-white;
+          width: 107px;
+          background: $color-dark-background;
+          font-size: 15px;
+          cursor: pointer;
+
+          &amp;:hover {
+            background: $color-darker-background;
+          }
+
+          &amp;:disabled {
+            color: $color-light-background;
+            border-color: $color-light-background;
+          }
+        }
+      }
+    }
+  }
+
+  .percentage {
+    height: 36px;
+  }
+
+  @include breakpoint(tablet) {
+    width: 100%;
+
+    &amp;.list {
+      justify-content: space-between;
+
+      .ruling-image {
+        width: 27%;
+      }
+
+      .gradient {
+        display: block;
+      }
+
+      .ruling-info {
+        padding: 0 12px 0 150px;
+        gap: 40px;
+        flex-direction: row;
+
+        .first-section {
+          .title {
+            position: unset;
+            .thumb-button-container {
+              top: -4px;
+              left: 0;
+            }
+
+            .name {
+              font-size: 28px;
+            }
+          }
+
+          .description {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint(desktop) {
+    width: 100%;
+
+    &amp;.list {
+
+      .ruling-info {
+        padding: 0 12px 0 260px;
+        gap: 50px;
+
+        .thumb-button-container {
+          width: 45px;
+          padding: 0;
+        }
+
+        .first-section {
+          margin-top: 15px;
+          .title {
+            .thumb-button-container {
+              top: 0;
+              left: 0;
+              height: 45px;
+            }
+
+            .name {
+              font-size: 36px;
+              line-height: 44px;
+            }
+          }
+
+          .description {
+            font-size: 18px;
+            height: 39px;
+          }
+        }
+
+        .second-section {
+  
+          .time-and-category {
+            font-size: 15px;
+          }
+          
+          .vote-section {
+            height: 45px;
+  
+            .vote-button {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .percentage {
+        height: 54px;
+      }
+    }
+
+    .ruling-info {
+      .first-section {
+        .title {
+          .name {
+            font-size: 34px;
+          }
+        }
+      }
+    }
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="ruling" [style.height]="height" [class.list]="display === displayOptions.list" #ruling>    <img class="ruling-image" [src]="rulingData?.picture" [style.height]="height">    <div class="gradient" *ngIf="display === displayOptions.list" [style.height]="height"></div>    <div class="ruling-info">        <div class="first-section">            <div class="title">                <div class="thumb-button-container"><app-thumb-button [type]="approvePercentage > 50 ? voteType.up : voteType.down"></app-thumb-button></div>                <h1 class="name" [title]="rulingData?.name">{{rulingData?.name}}</h1>            </div>            <p class="description" [title]="rulingData?.description">{{rulingData?.description}}</p>        </div>        <div class="second-section">            <p class="time-and-category" *ngIf="!hasVoted">{{rulingData?.lastUpdated | relativeTime}} {{"COMMON.IN" | translate}} <span class="capitalize">{{rulingData?.category}}</span></p>               <p class="time-and-category" *ngIf="hasVoted">{{"HOME.RULING.THANKS" | translate}}</p>            <div class="vote-section">                <div class="thumb-button-container" *ngIf="!hasVoted"><app-thumb-button [selected]="selectedVote === voteType.up" [type]="voteType.up" (click)="selectVote(voteType.up)"></app-thumb-button></div>                <div class="thumb-button-container" *ngIf="!hasVoted"><app-thumb-button [selected]="selectedVote === voteType.down" [type]="voteType.down" (click)="selectVote(voteType.down)"></app-thumb-button></div>                <button class="vote-button" [disabled]="selectedVote === null" (click)="vote()">{{\'HOME.RULING.\'+(hasVoted ? \'VOTE_AGAIN\' : \'VOTE\') | translate}}</button>            </div>        </div>    </div>    <div class="percentage">        <app-percentage-bar [approvePercentage]="approvePercentage"></app-percentage-bar>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AddNameComponent', 'selector': 'app-add-name'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsideAddNameComponent', 'selector': 'app-aside-add-name'},{'name': 'AsideSpeakOutComponent', 'selector': 'app-aside-speak-out'},{'name': 'DropdownComponent', 'selector': 'app-dropdown'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeContainer', 'selector': 'app-home'},{'name': 'LanguageSelectorComponent', 'selector': 'app-language-selector'},{'name': 'NavComponent', 'selector': 'app-nav'},{'name': 'PercentageBarComponent', 'selector': 'app-percentage-bar'},{'name': 'RulingComponent', 'selector': 'app-ruling'},{'name': 'RulingsListComponent', 'selector': 'app-rulings-list'},{'name': 'ThumbButtonComponent', 'selector': 'app-thumb-button'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'RulingComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RulingComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
